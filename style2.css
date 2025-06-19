@@ -1,0 +1,645 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* Fixed the percentage value */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+/* ==========================utility class============================ */
+
+.cantinar {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    /* margin-top: 1em; */
+    font-weight: 300;
+    text-align: center;
+}
+
+.btn-priymary {
+    color: white;
+    background-color: #4CAF4F;
+    border: none;
+}
+
+/* ==========================nevbar css============================ */
+.nevbar {
+    background: #F5F7FA;
+    width: 100%;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.nevbar input[type='checkbox'] {
+    display: none;
+}
+
+.nevbar-cantinar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+.menu-items li a {
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+
+.nev-logo {
+    padding: 1.3rem 0;
+    margin-right: auto;
+    padding-left: 2rem;
+}
+
+.nev-logo img {
+    width: 14rem;
+    height: 2.5rem;
+}
+
+.nev-btn {
+    display: flex;
+    gap: 1rem;
+    /* height: fit-content; */
+    margin-left: 2rem;
+}
+
+.nev-btn a {
+    font-size: 1.6rem;
+    color: white;
+    background: #4CAF4F;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.nev-btn a:hover {
+    background: #3e8e41;
+}
+
+.hamburgur-lines {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 2.4rem;
+    width: 3rem;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.hamburgur-lines .line {
+    height: 0.3rem;
+    width: 100%;
+    border-radius: 1rem;
+    background: black;
+    transition: all 0.3s ease;
+}
+
+/* =================================== home style============================================ */
+#fast {
+    background: #F5F7FA;
+    padding: 3rem 0;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+.home-text {
+    padding-left: 70px;
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+
+.home-text h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-text h1.one {
+    color: #4CAF4F;
+    margin-bottom: 1.5rem;
+}
+
+.home-text p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.home-imges {
+    flex: 1 1 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-imges img {
+    max-width: 100%;
+    height: 300PX;
+    object-fit: contain;
+}
+
+/* ============================= servise style====================================== */
+#secand {
+    padding: 5rem 0;
+}
+
+.servis-cantiner {
+    text-align: center;
+}
+
+.servis-text h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #18191F;
+}
+
+.servis-text p {
+    font-size: 1.6rem;
+    color: #555;
+    margin-bottom: 3rem;
+}
+
+.servis-ican {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 4rem;
+    padding: 2rem 0;
+}
+
+.servis-ican img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* ======================================feature style====================================== */
+
+/* Feature Section */
+.feature {
+    width: 100%;
+}
+
+.feature-text {
+    text-align: center;
+}
+
+.feature-text h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    color: #4D4D4D;
+}
+
+.feature-text p {
+    font-size: 1.6rem;
+    color: #555;
+    margin-bottom: 3rem;
+}
+
+.feature-image {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+    padding: 0 144px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    width: 250px;
+    height: 260px;
+    padding: 24px 32px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px 0px #ABBED133;
+    transition: transform 0.4s ease;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-card img {
+    width: 65px;
+    height: 56px;
+    object-fit: contain;
+}
+
+.feature-card h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #18191F;
+}
+
+.feature-card p {
+    font-size: 1.6rem;
+    color: #717171;
+    margin-bottom: 3rem;
+}
+
+/* ============================feature-paragraph============================================== */
+.feature-paragraph {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 4rem 9%;
+}
+
+.paragraph-image {
+    flex: 1 1 45%;
+    max-width: 500px;
+}
+
+.paragraph-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.paragraph-content {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.paragraph-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #4D4D4D;
+    /* opacity: 0.85; */
+    /* margin: 0; */
+}
+
+.paragraph-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.6;
+    /* opacity: 0.75; */
+    color: #717171;
+    margin: 0;
+}
+
+.primary-btn {
+    text-decoration: none;
+    width: 140PX;
+    height: auto;
+    color: #fff;
+    background-color: #4CAF4F;
+    padding: 12px 32px;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: #388E3B;
+}
+
+
+/* ========================== Responsive Styles ========================= */
+@media (max-width: 768px) {
+    .navbar {
+        opacity: 0.95;
+        position: fixed;
+    }
+
+    .nevbar-cantinar {
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .nevbar-cantinar input[type="checkbox"],
+    .nevbar-cantinar.hamburgur-lines {
+        display: block;
+    }
+
+    .nevbar-cantinar input[type="checkbox"] {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 40px;
+        top: 20px;
+        left: 20px;
+        z-index: 10;
+        opacity: 0;
+
+    }
+
+    .nevbar-cantinar .hamburgur-lines {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30px;
+        width: 35px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+
+    }
+
+    .hamburgur-lines .line1 {
+        height: 3.5px;
+        width: 100%;
+        border-radius: 10px;
+        background: black;
+    }
+
+    .hamburgur-lines .line2 {
+        height: 3.5px;
+        width: 75%;
+        border-radius: 10px;
+        background: black;
+    }
+
+
+    .hamburgur-lines .line3 {
+        height: 3.5px;
+        width: 100%;
+        border-radius: 10px;
+        background: black;
+    }
+
+    .nevbar-cantinar .hamburgur-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .nevbar-cantinar .hamburgur-lines .line2 {
+
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .nevbar-cantinar .hamburgur-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .nevbar .menu-items {
+        padding-top: 80px;
+        background: #fff;
+        height: 100vh;
+        width: 200px;
+        transform: translateX(-150%);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: -30px;
+        padding-left: 20px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 5px 0px 10px 0px #aaa;
+        z-index: 1;
+        gap: 1rem;
+
+    }
+
+    .nevbar .menu-items {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .nevbar-cantinar input[type="checkbox"]:checked~.menu-items {
+        transform: translateX(0);
+    }
+
+    .nevbar-cantinar input[type="checkbox"]:checked~.hamburgur-lines .line1 {
+        transform: rotate(45deg);
+    }
+
+    .nevbar-cantinar input[type="checkbox"]:checked~.hamburgur-lines .line2 {
+        transform: scaleY(0);
+    }
+
+    .nevbar-cantinar input[type="checkbox"]:checked~.hamburgur-lines .line3 {
+        transform: rotate(-45deg);
+        width: 100%;
+    }
+
+    .nev-logo {
+        margin: 0 auto;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    .nev-btn {
+        flex-direction: column;
+        width: 40%;
+
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 1em 2.5em;
+        text-decoration: none;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        margin-top: 1em;
+        font-weight: 200;
+
+    }
+
+    .btn-priymary {
+        color: white;
+        background-color: #4CAF4F;
+        border: none;
+    }
+
+    /* ==================================home======================================== */
+    .home-text {
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .home-imges img {
+        width: 391px;
+        height: 407px;
+        padding-top: 3rem;
+    }
+
+    /* =============================================== servis========================================== */
+
+    .servis-text h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #18191F;
+    }
+
+    /* =============================================== fetuer========================================== */
+
+
+    .feature {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .feature-text {
+        text-align: center;
+    }
+
+    .feature-text h1 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #4D4D4D;
+    }
+
+    .feature-text p {
+        font-size: 1.4rem;
+        color: #555;
+        margin-bottom: 2rem;
+    }
+
+    .feature-image {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        gap: 4rem;
+    }
+
+    .feature-card {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .feature-card h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+        color: #18191F;
+    }
+
+    .feature-card p {
+        font-size: 1.2rem;
+        color: #717171;
+        margin-bottom: 2rem;
+    }
+
+    .feature-card img {
+        width: 60px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    /* ====================================feature-paragraph ================================================== */
+
+    .feature-paragraph {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 4rem 9%;
+    }
+
+    .paragraph-content {
+        text-align: center;
+    }
+
+    .primary-btn {
+        align-self: center;
+    }
+
+
+}
+
+
+
+@media (max-width: 480px) {
+    .home-text h1 {
+        font-size: 3rem;
+    }
+
+    .servis-text h1 {
+        font-size: 3rem;
+    }
+
+    .btn {
+        padding: 0.8em 1.5em;
+    }
+
+    .servis-ican img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+
+    }
+
+}
+
+/* @media (orientation: landscape) and (max-height: 768px) {
+    .nevbar .menu-items {
+        height: 110vh;
+    }
+} */
