@@ -460,7 +460,7 @@ body {
     margin: 0;
 }
 
-.primary-btn {
+.secand-btn {
     text-decoration: none;
     width: 140PX;
     height: auto;
@@ -474,8 +474,90 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.primary-btn:hover {
+.secand-btn:hover {
     background-color: #388E3B;
+}
+
+/* ========================== tesla Styles ========================= */
+.tesla-main {
+    background-color: #f5f7fa;
+}
+
+.tesla {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #f5f7fa; */
+    gap: 2rem;
+    padding: 4rem 9%;
+}
+
+.teslaimg img {
+    width: 326px;
+    height: 326px;
+    border-radius: 8px;
+}
+
+.tesla-content {
+    width: 748px;
+    height: 324px;
+    gap: 32px;
+
+}
+
+.tesla-text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #717171;
+
+
+}
+
+.tesla-text h1 {
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #4CAF4F;
+}
+
+.tesla-text h3 {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #717171;
+
+}
+
+.tesla-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tesla-icon img {
+    height: 48px;
+    width: 48px;
+    object-fit: contain;
+}
+
+.tesla-link {
+    margin-left: auto;
+    color: #22c55e;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.tesla-link:hover {
+    color: #16a34a;
 }
 
 
@@ -654,6 +736,11 @@ body {
         padding-top: 3rem;
     }
 
+    .home-btn {
+        font-size: 1.7rem;
+        font-weight: 300;
+    }
+
     /* =============================================== servis========================================== */
 
     .servis-text h1 {
@@ -738,8 +825,13 @@ body {
         text-align: center;
     }
 
-    .primary-btn {
+    /* .primary-btn {
         align-self: center;
+    } */
+    .Paragraph-btn {
+        align-self: center;
+        font-size: 1.7rem;
+        font-weight: 400;
     }
 
     /* ========================== product Styles ========================= */
@@ -752,18 +844,76 @@ body {
     .product-text {
         text-align: center;
     }
+
     .product-icon {
         grid-template-columns: 1fr;
         padding: 40px 20px;
         gap: 24px;
     }
 
-/* ========================== secand-ph Styles ========================= */
+    /* ========================== secand-ph Styles ========================= */
+    .secand-ph {
+        display: flex;
+        flex-direction: column;
+    }
 
-    .secand-ph-content{
+    .secand-ph-content {
         text-align: center;
     }
+
+    .secand-btn {
+        align-self: center;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+
+    /* ========================== tesla Styles ========================= */
+
+
+    .tesla {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .teslaimg img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .tesla-content {
+        padding: 1rem;
+    }
+
+    .tesla-icon {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .tesla-icon img {
+        width: 60px;
+        height: auto;
+    }
+
+    .tesla-link {
+        display: inline-block;
+        margin-top: 1rem;
+        font-weight: bold;
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .tesla-link:hover {
+        text-decoration: underline;
+    }
 }
+
+
 
 
 
@@ -820,7 +970,7 @@ body {
         font-size: 3rem;
         font-weight: 400;
         /* line-height: 1.3; */
-        color:#4CAF4F;
+        color: #4CAF4F;
     }
 
     .product-text h1 {
@@ -828,9 +978,10 @@ body {
         font-weight: 400;
         color: #4D4D4D;
     }
-   .secand-ph-content h1{
+
+    .secand-ph-content h1 {
         font-weight: 400;
-   }
+    }
 }
 
 /* @media (orientation: landscape) and (max-height: 768px) {
