@@ -682,9 +682,9 @@ body::-webkit-scrollbar {
 }
 
 /* ========================== faq Styles ========================= */
-#six {
+/* #six {
     padding-top: 60px;
-}
+} */
 
 .faq {
     padding-top: 64px;
@@ -1218,8 +1218,19 @@ body::-webkit-scrollbar {
 
     /* ========================== community Styles ========================= */
 
-    .faq {
-        text-align: center;
+    .faq h1 {
+        font-size: 2.4rem;
+        line-height: 1.4;
+    }
+
+    .faq-btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+    }
+
+    .faq.container {
+        padding: 2rem 1rem;
     }
 
     /* ========================== footer Styles ========================= */
@@ -1325,6 +1336,16 @@ body::-webkit-scrollbar {
         font-weight: 400;
         color: #2d2d2d;
         margin-bottom: 1rem;
+    }
+
+    .product-icon {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        gap: 20px;
+        /* Reduce spacing for small screens */
+        padding: 0 1rem;
+        /* Optional: Add horizontal padding */
     }
 
     .commonity-text p {
