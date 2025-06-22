@@ -334,7 +334,7 @@ body::-webkit-scrollbar {
     margin: 0;
 }
 
-.primary-btn {
+.Paragraph-btn {
     text-decoration: none;
     width: 140PX;
     height: auto;
@@ -346,6 +346,8 @@ body::-webkit-scrollbar {
     font-weight: 500;
     font-size: 1.2rem;
     transition: background-color 0.3s ease;
+    display: flex;
+    justify-self: center;
 }
 
 .primary-btn:hover {
@@ -386,10 +388,8 @@ body::-webkit-scrollbar {
 
 .product-icon {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 40px 80px;
-    padding: 60px 144px;
-
     box-sizing: border-box;
 }
 
@@ -546,9 +546,19 @@ body::-webkit-scrollbar {
     padding-bottom: 10px;
 }
 
+.tesla-image {
+    display: flex;
+    gap: 2rem;
+    /* or use px like 20px */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
 .tesla-image img {
-    height: 48px;
     width: 48px;
+    height: 48px;
     object-fit: contain;
 }
 
@@ -580,7 +590,7 @@ body::-webkit-scrollbar {
 }
 
 .commonity-text h1 {
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-weight: 600;
     color: #2d2d2d;
     margin-bottom: 1rem;
@@ -588,8 +598,9 @@ body::-webkit-scrollbar {
 
 .commonity-text p {
     color: #5f5f5f;
-    font-size: 1rem;
-    max-width: 600px;
+    font-size: 1.7rem;
+    line-height: 24px;
+    max-width: 600;
     margin: 0 auto 3rem auto;
 
 }
@@ -613,9 +624,9 @@ body::-webkit-scrollbar {
     position: relative;
 }
 
-.community-card:hover {
+/* .community-card:hover {
     transform: translateY(-5px);
-}
+} */
 
 /* IMAGE IN CARD */
 .community-card img {
@@ -636,8 +647,19 @@ body::-webkit-scrollbar {
     left: 0;
     right: 0;
     margin-inline: auto;
-    opacity: 1;
 
+    /* Animation setup */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.4s ease;
+    pointer-events: none;
+    /* Prevent hover issues */
+
+}
+
+.community-card:hover .lovar-text {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .lovar-text p {
@@ -659,6 +681,143 @@ body::-webkit-scrollbar {
     text-decoration: underline;
 }
 
+/* ========================== faq Styles ========================= */
+#six {
+    padding-top: 60px;
+}
+
+.faq {
+    padding-top: 64px;
+    padding-right: 165px;
+    padding-bottom: 64px;
+    padding-left: 165px;
+    background: #F5F7FA;
+}
+
+.faq h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #2d2d2d;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.faq-btn {
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    background-color: #4CAF4F;
+    padding: 12px 32px;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-self: center;
+}
+
+.faq-btn:hover {
+    background-color: #388E3B;
+}
+
+
+/* ==================================== footer =========================================== */
+
+.footer {
+  background-color: #263238;
+  color: #FFFFFF;
+  padding: 3rem 1rem;
+  font-size: 14px;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.footer-left {
+  flex: 1;
+  min-width: 220px;
+}
+.footer-logo {
+  width: 140px;
+  margin-bottom: 1rem;
+}
+.footer-left p {
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+.footer-icons a {
+  color: #fff;
+  margin-right: 12px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.footer-icons a:hover {
+  color: #4CAF4F;
+}
+.footer-links {
+  display: flex;
+  gap: 4rem;
+  flex: 2;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+}
+.footer-column h3 {
+  margin-bottom: 1rem;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.footer-column a {
+  text-decoration: none;
+  color: #BBBBBB;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+.footer-column a:hover {
+  color: #4CAF4F;
+}
+.footer-subscribe {
+  flex: 1;
+  min-width: 200px;
+}
+.footer-subscribe h3 {
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+.footer-subscribe form {
+  display: flex;
+  align-items: center;
+  background-color: #37474F;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.footer-subscribe input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  color: white;
+  outline: none;
+}
+.footer-subscribe button {
+  padding: 0 16px;
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 18px;
+}
+.footer-subscribe button:hover {
+  color: #4CAF4F;
+}
 /* ========================== Responsive Styles ========================= */
 @media (max-width: 768px) {
     .navbar {
@@ -937,21 +1096,19 @@ body::-webkit-scrollbar {
         display: flex;
         flex-direction: column;
     }
+
     .product-icon {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px 80px;
-        padding: 60px 144px;
         box-sizing: border-box;
+        gap: 20px; /* Reduce spacing for small screens */
+        padding: 0 1rem; /* Optional: Add horizontal padding */
     }
+
     .product-text {
         text-align: center;
     }
-    .product-icon {
-        grid-template-columns: 1fr;
-        padding: 40px 20px;
-        gap: 24px;
-    }
+
     /* ========================== secand-ph Styles ========================= */
     .secand-ph {
         display: flex;
@@ -1023,13 +1180,27 @@ body::-webkit-scrollbar {
     }
 
 
- /* ========================== tesla Styles ========================= */
+    /* ========================== community Styles ========================= */
 
-    .community{
+    .community {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
+
+
+    .commonity-text h1 {
+        font-size: 3rem;
+        font-weight: 400;
+        color: #2d2d2d;
+        margin-bottom: 1rem;
+    }
+    /* ========================== community Styles ========================= */
+
+    .faq{
+        text-align: center;
+    }
+
 }
 
 
@@ -1085,6 +1256,16 @@ body::-webkit-scrollbar {
         color: #4D4D4D;
     }
 
+    .paragraph-content p {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .secand-ph-content p {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
     .product-text .hading {
         font-size: 3rem;
         font-weight: 400;
@@ -1102,8 +1283,28 @@ body::-webkit-scrollbar {
         font-weight: 400;
     }
 
+    .commonity-text h1 {
+        font-size: 2rem;
+        font-weight: 400;
+        color: #2d2d2d;
+        margin-bottom: 1rem;
+    }
 
+    .commonity-text p {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
 
+    .tesla-content p {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .faq h1{
+        font-size: 3rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+        color: #18191F;
+    }
 }
 
 /* @media (orientation: landscape) and (max-height: 768px) {
