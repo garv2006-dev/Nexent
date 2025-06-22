@@ -388,7 +388,7 @@ body::-webkit-scrollbar {
 
 .product-icon {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px 80px;
     box-sizing: border-box;
 }
@@ -725,99 +725,117 @@ body::-webkit-scrollbar {
 /* ==================================== footer =========================================== */
 
 .footer {
-  background-color: #263238;
-  color: #FFFFFF;
-  padding: 3rem 1rem;
-  font-size: 14px;
+    background-color: #263238;
+    color: #FFFFFF;
+    padding: 3rem 1rem;
+    font-size: 14px;
 }
+
 .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
 }
+
 .footer-left {
-  flex: 1;
-  min-width: 220px;
+    flex: 1;
+    min-width: 220px;
 }
+
 .footer-logo {
-  width: 140px;
-  margin-bottom: 1rem;
+    width: 140px;
+    margin-bottom: 1rem;
 }
+
 .footer-left p {
-  margin-bottom: 1rem;
-  opacity: 0.8;
-  line-height: 1.6;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+    line-height: 1.6;
 }
+
 .footer-icons a {
-  color: #fff;
-  margin-right: 12px;
-  font-size: 18px;
-  transition: color 0.3s;
+    color: #fff;
+    margin-right: 12px;
+    font-size: 18px;
+    transition: color 0.3s;
 }
+
 .footer-icons a:hover {
-  color: #4CAF4F;
+    color: #4CAF4F;
 }
+
 .footer-links {
-  display: flex;
-  gap: 4rem;
-  flex: 2;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 4rem;
+    flex: 2;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
 .footer-column {
-  display: flex;
-  flex-direction: column;
-  min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
 }
+
 .footer-column h3 {
-  margin-bottom: 1rem;
-  font-size: 16px;
-  color: #FFFFFF;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    color: #FFFFFF;
 }
+
 .footer-column a {
-  text-decoration: none;
-  color: #BBBBBB;
-  margin-bottom: 8px;
-  transition: color 0.3s;
+    text-decoration: none;
+    color: #BBBBBB;
+    margin-bottom: 8px;
+    transition: color 0.3s;
 }
+
 .footer-column a:hover {
-  color: #4CAF4F;
+    color: #4CAF4F;
 }
+
 .footer-subscribe {
-  flex: 1;
-  min-width: 200px;
+    flex: 1;
+    min-width: 200px;
 }
+
 .footer-subscribe h3 {
-  margin-bottom: 1rem;
-  font-size: 16px;
+    margin-bottom: 1rem;
+    font-size: 16px;
 }
+
 .footer-subscribe form {
-  display: flex;
-  align-items: center;
-  background-color: #37474F;
-  border-radius: 8px;
-  overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: #37474F;
+    border-radius: 8px;
+    overflow: hidden;
 }
+
 .footer-subscribe input {
-  flex: 1;
-  padding: 12px;
-  border: none;
-  background: transparent;
-  color: white;
-  outline: none;
+    flex: 1;
+    padding: 12px;
+    border: none;
+    background: transparent;
+    color: white;
+    outline: none;
 }
+
 .footer-subscribe button {
-  padding: 0 16px;
-  background: none;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-size: 18px;
+    padding: 0 16px;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
 }
+
 .footer-subscribe button:hover {
-  color: #4CAF4F;
+    color: #4CAF4F;
 }
+
 /* ========================== Responsive Styles ========================= */
 @media (max-width: 768px) {
     .navbar {
@@ -1101,8 +1119,10 @@ body::-webkit-scrollbar {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         box-sizing: border-box;
-        gap: 20px; /* Reduce spacing for small screens */
-        padding: 0 1rem; /* Optional: Add horizontal padding */
+        gap: 20px;
+        /* Reduce spacing for small screens */
+        padding: 0 1rem;
+        /* Optional: Add horizontal padding */
     }
 
     .product-text {
@@ -1195,12 +1215,29 @@ body::-webkit-scrollbar {
         color: #2d2d2d;
         margin-bottom: 1rem;
     }
+
     /* ========================== community Styles ========================= */
 
-    .faq{
+    .faq {
         text-align: center;
     }
 
+    /* ========================== footer Styles ========================= */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer-subscribe form {
+        justify-content: center;
+    }
 }
 
 
@@ -1299,7 +1336,8 @@ body::-webkit-scrollbar {
         font-size: 1.5rem;
         font-weight: 400;
     }
-    .faq h1{
+
+    .faq h1 {
         font-size: 3rem;
         font-weight: 400;
         margin-bottom: 0.5rem;
