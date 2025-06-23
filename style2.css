@@ -245,7 +245,7 @@ body::-webkit-scrollbar {
     margin-bottom: 3rem;
 }
 
-.feature-image {
+ /* .feature-image {
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
@@ -263,7 +263,7 @@ body::-webkit-scrollbar {
     border-radius: 8px;
     box-shadow: 0px 2px 4px 0px #ABBED133;
     transition: transform 0.4s ease;
-}
+} 
 
 .feature-card:hover {
     transform: scale(1.05);
@@ -286,6 +286,50 @@ body::-webkit-scrollbar {
     font-size: 1.6rem;
     color: #717171;
     margin-bottom: 3rem;
+} */
+
+
+.feature-image {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+
+.feature-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.feature-card p {
+  font-size: 1.4rem;
+  color: #555;
 }
 
 /* ============================feature-paragraph============================================== */
@@ -769,7 +813,7 @@ body::-webkit-scrollbar {
 .footer-links {
     display: flex;
     gap: 4rem;
-    flex: 2;
+    /* flex: 2; */
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -1051,7 +1095,7 @@ body::-webkit-scrollbar {
         margin-bottom: 2rem;
     }
 
-    .feature-image {
+    /* .feature-image {
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -1061,6 +1105,19 @@ body::-webkit-scrollbar {
 
     .feature-card {
         width: 90%;
+        max-width: 300px;
+        height: auto;
+        padding: 2rem;
+    } */
+
+    .feature-image {
+        justify-content: center;
+        gap: 3rem;
+        padding: 0 2rem;
+    }
+
+    .feature-card {
+        width: 45%;
         max-width: 300px;
         height: auto;
         padding: 2rem;
@@ -1182,7 +1239,7 @@ body::-webkit-scrollbar {
     .tesla-image {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 6rem;
+        /* gap: 6rem; */
         width: 100%;
         justify-items: center;
     }
@@ -1232,7 +1289,7 @@ body::-webkit-scrollbar {
         /* font-size: 1.4rem; */
         /* padding: 0.8rem 1.6rem; */
         display: block;
-        margin: 0 ;
+        margin: 0;
         /* 👉 centers the button */
     }
 
@@ -1254,8 +1311,169 @@ body::-webkit-scrollbar {
     }
 }
 
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 2rem;
+    }
+
+    .navbar {
+        padding: 1rem 2rem;
+        opacity: 0.95;
+        position: fixed;
+    }
+
+    .home-text h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .home-imges img {
+        width: 80%;
+        height: auto;
+        padding-top: 2rem;
+    }
+
+    /* .feature-image {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .feature-card {
+        max-width: 100%;
+        padding: 2rem;
+        box-sizing: border-box;
+    } */
+
+    .feature-image {
+        justify-content: center;
+        gap: 4rem;
+        padding: 0 4rem;
+    }
+
+    .feature-card {
+        width: 30%;
+        min-width: 250px;
+        padding: 2rem;
+    }
+
+    .feature-text h1 {
+        font-size: 2.8rem;
+    }
+
+    /* .feature-card {
+    width: 80%;
+    max-width: 320px;
+    padding: 2rem;
+  } */
+
+    .product-icon {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 0 1.5rem;
+    }
+
+    .tesla {
+        padding-top: 2rem;
+        margin-top: 2rem;
+    }
+
+    .tesla-image {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+    }
+
+    .commonity-text h1 {
+        font-size: 3.2rem;
+        text-align: center;
+    }
+
+    .faq h1 {
+        font-size: 2.6rem;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .faq-btn {
+        font-size: 1.6rem;
+        padding: 1rem 2rem;
+        display: block;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .feature-paragraph {
+
+        padding: 4rem 5%;
+    }
+
+    .feature-paragraph .paragraph-content {
+        text-align: center;
+    }
+}
 
 
+
+@media (min-width: 1200px) {
+    /* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  } */
+
+    .feature {
+        padding: 4rem 2rem;
+    }
+
+    .product-icon {
+        grid-template-columns: repeat(1fr);
+        gap: 40px;
+    }
+
+    .tesla-image {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4rem;
+    }
+
+    .faq h1 {
+        font-size: 3.5rem;
+    }
+
+    .home-text h1 {
+        font-size: 5rem;
+    }
+
+    .feature-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .feature-text p {
+        font-size: 1.8rem;
+    }
+
+    .feature-image {
+        padding: 0 6rem;
+        gap: 6rem;
+    }
+
+    .feature-card {
+        width: 28%;
+        padding: 2rem;
+    }
+
+    /* .btn {
+        font-size: 1.8rem;
+        padding: 1.2rem 3rem;
+    } */
+}
 
 
 @media (max-width: 480px) {
@@ -1291,6 +1509,20 @@ body::-webkit-scrollbar {
         margin-bottom: 1rem;
         padding-bottom: 2rem;
         color: #4D4D4D;
+    }
+
+    .feature-image {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+        gap: 2rem;
+    }
+
+    .feature-card {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        padding: 1.5rem;
     }
 
     .feature-card h2 {
@@ -1369,8 +1601,46 @@ body::-webkit-scrollbar {
     }
 }
 
-/* @media (orientation: landscape) and (max-height: 768px) {
-    .nevbar .menu-items {
-        height: 110vh;
+
+/* =============================== landscape ======================================= */
+
+@media (orientation: landscape) and (max-height: 768px) {
+    body {
+        font-size: 1.4rem;
     }
-} */
+
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .home-text h1 {
+        font-size: 3.2rem;
+    }
+
+    .home-imges img {
+        width: 70%;
+        height: auto;
+        padding-top: 1rem;
+    }
+
+    .feature-image {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .feature-card {
+        flex: 0 1 calc(40% - 1rem);
+        padding: 1.5rem;
+    }
+
+    .faq h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
