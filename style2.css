@@ -8,6 +8,7 @@ html {
     font-size: 62.5%;
     /* Fixed the percentage value */
 }
+
 .no-scroll {
     overflow: hidden;
     height: 100vh;
@@ -148,7 +149,7 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 2rem 1rem;
+    padding: 0 1rem;
 }
 
 .home-text {
@@ -440,6 +441,7 @@ body::-webkit-scrollbar {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px 80px;
     box-sizing: border-box;
+    /* padding-bottom: 2rem; */
 }
 
 .prod-cantenr {
@@ -898,15 +900,14 @@ body::-webkit-scrollbar {
         opacity: 0.95;
         position: fixed;
         padding: 0 0;
-        position: fixed;
+
     }
 
     .nevbar-container {
         display: block;
         position: relative;
         height: 64px;
-        position: fixed;
-        background: #fff;
+
     }
 
     .nevbar-container input[type="checkbox"],
@@ -1060,9 +1061,12 @@ body::-webkit-scrollbar {
     }
 
     .home-text h1 {
+        padding-top: 20px;
         font-size: 3.5rem;
+        font-weight: 600;
         text-align: center;
-    }
+        margin: 0;
+    } 
 
     .home-imges img {
         width: 391px;
@@ -1185,6 +1189,7 @@ body::-webkit-scrollbar {
     .product {
         display: flex;
         flex-direction: column;
+       
     }
 
     .product-icon {
@@ -1192,13 +1197,23 @@ body::-webkit-scrollbar {
         grid-template-columns: repeat(2, 1fr);
         box-sizing: border-box;
         gap: 20px;
-        /* Reduce spacing for small screens */
-        padding: 0 1rem;
-        /* Optional: Add horizontal padding */
+        
+        /* padding: 2rem 3rem; */
+        
+       padding-bottom: 15px;
     }
 
     .product-text {
         text-align: center;
+    }
+
+    .product-text h1 {
+        padding-top: 3rem;
+
+    }
+
+    .product-text .hading {
+        padding-top: 0.5rem;
     }
 
     /* ========================== secand-ph Styles ========================= */
@@ -1279,7 +1294,13 @@ body::-webkit-scrollbar {
         flex-direction: column;
         width: 100%;
     }
+
+    .community-images {
+        overflow: hidden;
+    }
+
     .commonity-text h1 {
+        padding-top: 3rem;
         font-size: 3rem;
         font-weight: 400;
         color: #2d2d2d;
@@ -1302,7 +1323,7 @@ body::-webkit-scrollbar {
         /* padding: 0.8rem 1.6rem; */
         display: block;
         margin: 0;
-        /* 👉 centers the button */
+
     }
 
     /* ========================== footer Styles ========================= */
@@ -1325,9 +1346,9 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 1024px) {
-    .container {
+    /* .container {
         padding: 0 2rem;
-    }
+    }  */
 
     .navbar {
         padding: 1rem 2rem;
@@ -1336,9 +1357,10 @@ body::-webkit-scrollbar {
     }
 
     .home-text h1 {
-        font-size: 4rem;
+        font-size: 7rem;
+        font-weight: 700;
         text-align: center;
-    }
+    } 
 
     .home-imges img {
         width: 80%;
@@ -1387,7 +1409,7 @@ body::-webkit-scrollbar {
     .product-icon {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
-        padding: 0 1.5rem;
+        padding: 2rem 1.5rem;
     }
 
     .tesla {
@@ -1593,7 +1615,7 @@ body::-webkit-scrollbar {
         box-sizing: border-box;
         gap: 20px;
         /* Reduce spacing for small screens */
-        padding: 0 1rem;
+        padding: 2rem 1rem;
         /* Optional: Add horizontal padding */
     }
 
@@ -1627,9 +1649,9 @@ body::-webkit-scrollbar {
         padding: 0.5rem 1rem;
     }
 
-    .home-text h1 {
+    /* .home-text h1 {
         font-size: 3.2rem;
-    }
+    } */
 
     .home-imges img {
         width: 70%;
