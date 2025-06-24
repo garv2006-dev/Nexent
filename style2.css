@@ -991,7 +991,7 @@ body::-webkit-scrollbar {
         padding-top: 80px;
         background: #fff;
         height: 100vh;
-        width: 200px;
+        width: 300px;
         transform: translateX(-150%);
         display: flex;
         flex-direction: column;
@@ -1538,8 +1538,8 @@ body::-webkit-scrollbar {
     }
 
     .servis-ican img {
-        width: 20px;
-        height: 20px;
+        width: 38px;
+        height: 38px;
         object-fit: contain;
 
     }
