@@ -14,7 +14,7 @@
     <!-- Navbar Section -->
     <div class="nevbar">
       <div class="nevbar-container container">
-        <input type="checkbox" />
+        <input type="checkbox" id="menu-toggles" />
         <div class="hamburgur-lines">
           <span class="line line1"></span>
           <span class="line line2"></span>
@@ -277,7 +277,7 @@
     <section id="six">
       <div class="faq container">
         <h1>
-          Pellentesque suscipit<br/>
+          Pellentesque suscipit<br />
           fringilla libero eu.
         </h1>
         <a href="" class="btn btn-priymary faq-btn">Get a Demo &rarr;</a>
@@ -287,7 +287,11 @@
       <div class="footer-container container">
         <!-- Left Section -->
         <div class="footer-left">
-          <img src="./img/Logo(footer).png" alt="Nexcent Logo" class="footer-logo" />
+          <img
+            src="./img/Logo(footer).png"
+            alt="Nexcent Logo"
+            class="footer-logo"
+          />
           <p>Copyright © 2020 Nexcent ltd.<br />All rights reserved</p>
           <div class="footer-icons">
             <a href="#"><i class="fab fa-instagram"></i></a>
@@ -325,5 +329,44 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      // Wait until the DOM is loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        const checkbox = document.querySelector(
+          '.nevbar-container input[type="checkbox"]'
+        );
+        const menuItems = document.querySelectorAll(".nevbar .menu-items a"); // assuming links
+
+        menuItems.forEach((item) => {
+          item.addEventListener("click", () => {
+            checkbox.checked = false; // uncheck the checkbox
+          });
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const checkbox = document.querySelector(
+          '.nevbar-container input[type="checkbox"]'
+        );
+        const menuItems = document.querySelectorAll(".nevbar .menu-items a");
+        const body = document.body;
+
+        checkbox.addEventListener("change", function () {
+          if (this.checked) {
+            body.classList.add("no-scroll");
+          } else {
+            body.classList.remove("no-scroll");
+          }
+        });
+
+        menuItems.forEach((item) => {
+          item.addEventListener("click", () => {
+            checkbox.checked = false;
+            body.classList.remove("no-scroll");
+          });
+        });
+      });
+    </script>
   </body>
 </html>
